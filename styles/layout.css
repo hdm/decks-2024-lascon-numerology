@@ -1,0 +1,111 @@
+.slidev-layout {
+  @apply text-2xl;
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+    font-weight: bold;
+  }
+
+  h1+p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p+h2,
+  ul+h2,
+  table+h2 {
+    @apply mt-10;
+  }
+
+}
+
+.slidev-layout.default {
+
+  background: linear-gradient(#000f, #004d);
+
+  h1 {
+    @apply text-5xl mb-10;
+    font-weight: bold;
+  }
+
+}
+
+.slidev-layout.quote {
+  background: linear-gradient(#000f, #004d);
+}
+
+.slidev-layout.section {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+    font-weight: bold;
+  }
+
+  h1+p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p+h2,
+  ul+h2,
+  table+h2 {
+    @apply mt-10;
+  }
+
+}
+
+
+.legend {
+  margin: 0;
+  background-color: black;
+  padding: 0.25rem;
+}
+
+.legRouter {
+  font-weight: 'bold';
+  color: rgb(0, 255, 255);
+}
+
+.legSwitch {
+  color: #26ff00;
+}
+
+.legServer {
+  color: rgb(255, 46, 46);
+}
+
+.legPrinter {
+  color: rgb(255, 255, 5);
+}
+
+.legEndpoint {
+  color: rgb(255, 12, 255);
+}
+
+.legCamera {
+  color: rgb(163, 152, 195);
+}
+
+.neonGreen {
+  color: #39FF14;
+}
+
+.neonYellow {
+  color: #ffff14;
+}
+
+.neonPink {
+  color: #fcaffc;
+}
+
+.neonOrange {
+  color: #ffbc7e;
+}
+
+.neonBlue {
+  color: #7efdff;
+}
