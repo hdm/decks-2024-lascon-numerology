@@ -43,7 +43,6 @@ export default {
   watch: {
     count: {
       handler(nV) {
-        // console.log("new count " + nV + " for grid " + this.gridID + " with state " + this.isActive);
         if (!this.isActive) {
           return
         }
@@ -53,11 +52,9 @@ export default {
     isActive: {
       handler(nV) {
         if (nV) {
-          console.log("active is now true for grid " + this.gridID);
           this.clearGrid();
           this.stepGrid();
         } else {
-          console.log("active is now false for grid " + this.gridID);
           this.count = 0;
           this.clearGrid();
         }
@@ -123,7 +120,6 @@ export default {
 
         var v = Number(cell.attr("rnd"));
 
-        console.log("v for count " + this.count + " is " + v);
         var fco = "#000";
         if ((c > 1000) && (c < 1200)) {
           if (v > 0.65) {
